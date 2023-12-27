@@ -1,0 +1,26 @@
+body {
+    margin: 0; 
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.img-store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+    width: 100px;
+}
+
+.img-store img {
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    
+}
+  
