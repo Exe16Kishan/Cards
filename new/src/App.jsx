@@ -1,11 +1,13 @@
 import Cards from './cards/Cards'
-
+import Nav from './header/Nav'
 function App() {
   
 
   return (
     <>
-     <Cards></Cards>
+    <Nav></Nav>
+     {/* <Cards></Cards> */}
+
     </>
   )
 }

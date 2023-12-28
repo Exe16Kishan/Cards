@@ -1,20 +1,22 @@
 import React from 'react'
-import './Cards.css'
 import img from './img1.webp'
 function Cards() {
 
   return (
     <>
     
-    <div className="main">
+    <div className=" flex justify-center items-center h-screen
+     
+     ">
         
         {/* upper */}
-        <div className="img-store">
-        <img src={img}  />
+        <div className="  ">
+        <img src={img}  className='h-60 '  />
+        {/* kishan */}
         
-        {/* lower */}
         </div>
-        <div className="info">
+        {/* lower */}
+        <div className=" bg-slate-500 h-80 w-80 ">
 
         </div>
 
