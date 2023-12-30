@@ -8,7 +8,7 @@ function Nav() {
    { name: "CV" }];
   return (
     <>
-      <div className=" flex justify-around w-screen items-center bg-slate-500">
+      <div className=" flex justify-around flex-wrap w-screen items-center bg-slate-500">
 
         <div className="flex items-center ">
           <img src={brain} className=" h-16 w-16" />
