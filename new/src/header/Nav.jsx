@@ -1,11 +1,23 @@
-import React from "react";
+import React ,{useState} from "react";
 import brain from "./brain.png";
 import search from "./search.png";
-function Nav() {
+function Nav({searchInput}) {
   // Used in map func 
   const links = [{ name: "Git" },
    { name: "Contact" }, 
    { name: "CV" }];
+ 
+   // store data entered by user
+   const[input,setinput]=useState("")
+
+  // function to handle button click
+  function handleChange(e) {
+    const searchText = e.target.value;
+    setinput(searchText);
+    searchInput(searchText); // Notify the parent component of the search input
+  }
+
+  
   return (
     <>
       <div className=" flex justify-around flex-wrap w-screen items-center bg-slate-500">
@@ -23,8 +35,8 @@ function Nav() {
         </div>
 
         <div className="flex items-center  bg-slate-400 rounded-full">
-          <input className="outline-none border-none bg-transparent px-3" />
-          <img
+          <input type="text" className="outline-none border-none bg-transparent px-3" onChange={handleChange} />
+          <img onClick={()=>searchInput(input)}
             src={search}
             className=" cursor-pointer h-8 px-2 py-1"
             
