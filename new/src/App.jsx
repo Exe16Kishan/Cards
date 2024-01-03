@@ -50,7 +50,9 @@ function ToggleSlide(data) {
     <Nav searchInput={toggleSearch} sidebar={ToggleSide} ></Nav>
 
     {/* rendering side nav bar  */}
-     {open && <SideNav close={ToggleSlide} />}
+    
+    {open && <SideNav close={ToggleSlide} />}
+    
 
     {/* sending the filterd array to card component to render only the searched input */}
      <Cards items={filterdItems}></Cards>
